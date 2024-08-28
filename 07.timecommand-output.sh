@@ -10,3 +10,6 @@ echo "Today's date: $DATE"
 DATE=$(date +%T)
 
 echo " Time : $DATE"
+
+DATE=$(date '+%F %T')
+echo "time stamp :$DATE"

@@ -22,7 +22,7 @@ CHECK_ROOT(){                                          # CHECK_ROOT function cre
     fi  
 }
 VALIDATE(){                                            # VALIDATE function is created to check package installation success or failed
-    if[ $? -ne 0]
+    if[ $? -ne 0 ]
     then 
         echo -e " $2 is ---$R FAILED $N" | tee -a $LOG_FILE
 

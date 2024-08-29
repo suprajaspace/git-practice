@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# to check root access line 4-10 ,  # id=0 means root access.  id -u prints root access number
 USERID=$(id -u)
 #echo "user ID is: $USERID"
 if [ $USERID -ne 0 ]
@@ -8,6 +9,7 @@ then
     exit 1
 fi
     
+# to install git, here first if condition for to check git installed or not. second if i.e nested if to check if not installed git proceed to install git.
 dnf list installed git
 if [ $? -ne 0 ]
 then
@@ -22,6 +24,7 @@ then
 
 fi
 
+# to install mysql, here first if condition for to check mysql installed or not. second if i.e nested if to check if not installed mysql proceed to install git.
 dnf list installed mysql
 if [ $? -ne 0 ]
 then

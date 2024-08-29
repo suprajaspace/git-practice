@@ -7,7 +7,7 @@ TIMESTAMP=$(date +%y-%m-%d-%H-%M-%s)                   # TIMESTAMP is deriving t
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"    # LOG_FILE is to store logs for specific script name
 mkdir -p $LOGS_FOLDER                                  # make directory for LOGS_FOLDER , here -p helps to make directory if it is not created, and directory already created no error throws
 
-USERID=$(id-u)                                         # to check root user id, root user id =0 , id -u helps to give user id in number
+USERID=$(id -u)                                         # to check root user id, root user id =0 , id -u helps to give user id in number
                                                       
 R="\e[31m"                                             # colors command
 G="\e[32m"

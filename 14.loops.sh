@@ -14,6 +14,6 @@
 for i in {0..100} #0-100
 
 do 
-    echo $I
+    echo $i
 done
 

@@ -22,3 +22,4 @@ else
 echo "arguments not passed"
 fi
 
+echo " $# arguments passed "

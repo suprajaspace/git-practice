@@ -5,7 +5,7 @@ NUMBER2=$2
 SUM=$(($NUMBER1+$NUMBER2))
 echo "$SUM"
 
-USERID=$(id- u)
+USERID=$(id -u)
 
 echo "$USERID"
 

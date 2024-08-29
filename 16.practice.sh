@@ -24,7 +24,16 @@ fi
 
 echo " $# arguments passed "
 
-for print
+for 
 do 
     echo "$@"
+done
+
+for 
+do 
+    echo "$#"
+done
+for 
+do 
+    echo "$0"
 done

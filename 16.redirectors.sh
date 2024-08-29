@@ -21,11 +21,13 @@ CHECK_ROOT(){                                          # CHECK_ROOT function cre
         exit 1
     fi  
 }
-VALIDATE(){                                            # VALIDATE function is created to check package installation success or failed
+ # VALIDATE function is created to check package installation success or failed
+VALIDATE(){                                        
     if[ $1 -ne 0 ]
-    
+
     then 
         echo -e " $2 is ---$R FAILED $N" | tee -a $LOG_FILE
+        exit1
 
     else 
         echo -e " $2 is ---$G SUCCESS $N" | tee -a $LOG_FILE

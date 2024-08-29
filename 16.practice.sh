@@ -12,5 +12,5 @@ echo "$USERID"
 R="\e[31m"
 N="\e[0m"
 
-echo "$R supraja $N"
+echo -e "$R supraja $N"
 

@@ -28,12 +28,3 @@ for
 do 
     echo "$@"
 done
-
-for 
-do 
-    echo "$#"
-done
-for 
-do 
-    echo "$0"
-done

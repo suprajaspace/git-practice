@@ -25,9 +25,8 @@ CHECK_ROOT(){                                          # CHECK_ROOT function cre
 VALIDATE(){                                        
     if[ $1 -ne 0 ]
         then
-        echo -e " $2 is ---$R FAILED $N" | tee -a $LOG_FILE
-        exit1
-
+            echo -e " $2 is ---$R FAILED $N" | tee -a $LOG_FILE
+            exit1
     else 
         echo -e " $2 is ---$G SUCCESS $N" | tee -a $LOG_FILE
     fi
@@ -50,7 +49,7 @@ do
     then
         echo "$package is not installed, going to install it.." |tee -a $LOG_FILE
         dnf install $package -y &>> LOG_FILE
-        VALIDATE $? "installing $package
+        VALIDATE $? "installing $package"
         else 
         echo -e"$package is already installed .. nothing to do $N" | tee -a $LOG_FILE
     fi

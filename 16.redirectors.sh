@@ -23,7 +23,7 @@ CHECK_ROOT(){                                          # CHECK_ROOT function cre
 }
  # VALIDATE function is created to check package installation success or failed
 VALIDATE(){                                        
-    if[ $1 -ne 0 ]
+    if [ $1 -ne 0 ]
     then
             echo -e " $2 is ---$R FAILED $N" | tee -a $LOG_FILE
             exit 1
@@ -37,7 +37,7 @@ USAGE(){
 }
     echo "script started executing at :$(date)" | tee -a $LOG_FILE
 CHECK_ROOT
-if[ $# -eq 0 ]
+if [ $# -eq 0 ]
     then 
     USAGE
 fi
@@ -45,7 +45,7 @@ fi
 for package in $@  #$@ refers to all arguments passed to it
 do 
     dnf list installed $package & >> $LOG_FILE
-    if[ $? -ne 0 ]
+    if [ $? -ne 0 ]
     then
         echo "$package is not installed, going to install it.." | tee -a $LOG_FILE
         dnf install $package -y &>> $LOG_FILE

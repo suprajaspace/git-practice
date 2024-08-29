@@ -15,7 +15,7 @@ N="\e[0m"
 
 echo -e "$R supraja $N"
 
-if [ $1 -ge 20 ]
+if [ $3 -ge 20 ]
 then 
 echo " arguments passed"
 else

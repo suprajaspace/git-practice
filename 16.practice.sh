@@ -23,3 +23,8 @@ echo "arguments not passed"
 fi
 
 echo " $# arguments passed "
+
+for print
+do 
+    echo "$@"
+done

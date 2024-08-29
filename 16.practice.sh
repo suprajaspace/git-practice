@@ -28,3 +28,12 @@ for print
 do 
     echo "$@"
 done
+
+for print
+do 
+    echo "$#"
+done
+for print
+do 
+    echo "$0"
+done

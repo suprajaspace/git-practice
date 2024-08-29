@@ -15,7 +15,7 @@ N="\e[0m"
 Y="\e[33m"
 
 CHECK_ROOT(){                                          # CHECK_ROOT function created to inform root user access or not, if not root user error throw to run script with root user
-    if [ USERID -ne 0 ]
+    if [ $USERID -ne 0 ]
     then 
         echo -e "$R please run this script with root priveleges $N" | tee -a $LOG_FILE
         exit 1

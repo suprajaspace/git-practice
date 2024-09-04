@@ -11,5 +11,5 @@ DATE=$(date +%T)
 
 echo " Time : $DATE"
 
-DATE=$(date '+%F %T')
-echo "time stamp :$DATE"
+TIMESTAMP=$(date +%y-%m-%d-%H-%M-%s) 
+echo "time stamp :$TIMESTAMP"
